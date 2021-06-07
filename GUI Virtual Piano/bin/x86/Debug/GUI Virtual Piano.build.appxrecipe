@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-8Q2NITJ</Machine>
+    <WindowsUser>Kaitlyn Dickinson</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>0de4b826-5bf2-4330-8607-dd72115e152f</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Jonah</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\GUI Virtual Piano.exe">
+      <PackagePath>entrypoint\GUI Virtual Piano.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_1.wav">
+      <PackagePath>Samples\Bell\Key_1.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_10.wav">
+      <PackagePath>Samples\Bell\Key_10.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_11.wav">
+      <PackagePath>Samples\Bell\Key_11.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_12.wav">
+      <PackagePath>Samples\Bell\Key_12.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_13.wav">
+      <PackagePath>Samples\Bell\Key_13.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_14.wav">
+      <PackagePath>Samples\Bell\Key_14.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_15.wav">
+      <PackagePath>Samples\Bell\Key_15.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_16.wav">
+      <PackagePath>Samples\Bell\Key_16.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_17.wav">
+      <PackagePath>Samples\Bell\Key_17.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_18.wav">
+      <PackagePath>Samples\Bell\Key_18.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_19.wav">
+      <PackagePath>Samples\Bell\Key_19.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_2.wav">
+      <PackagePath>Samples\Bell\Key_2.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_20.wav">
+      <PackagePath>Samples\Bell\Key_20.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_21.wav">
+      <PackagePath>Samples\Bell\Key_21.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_22.wav">
+      <PackagePath>Samples\Bell\Key_22.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_23.wav">
+      <PackagePath>Samples\Bell\Key_23.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_24.wav">
+      <PackagePath>Samples\Bell\Key_24.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_25.wav">
+      <PackagePath>Samples\Bell\Key_25.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_3.wav">
+      <PackagePath>Samples\Bell\Key_3.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_4.wav">
+      <PackagePath>Samples\Bell\Key_4.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_5.wav">
+      <PackagePath>Samples\Bell\Key_5.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_6.wav">
+      <PackagePath>Samples\Bell\Key_6.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_7.wav">
+      <PackagePath>Samples\Bell\Key_7.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_8.wav">
+      <PackagePath>Samples\Bell\Key_8.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Bell\Key_9.wav">
+      <PackagePath>Samples\Bell\Key_9.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_21.wav">
+      <PackagePath>Samples\Drums\Key_21.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_1.wav">
+      <PackagePath>Samples\Drums\Key_1.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_10.wav">
+      <PackagePath>Samples\Drums\Key_10.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_11.wav">
+      <PackagePath>Samples\Drums\Key_11.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_12.wav">
+      <PackagePath>Samples\Drums\Key_12.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_13.wav">
+      <PackagePath>Samples\Drums\Key_13.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_14.wav">
+      <PackagePath>Samples\Drums\Key_14.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_15.wav">
+      <PackagePath>Samples\Drums\Key_15.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_16.wav">
+      <PackagePath>Samples\Drums\Key_16.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_17.wav">
+      <PackagePath>Samples\Drums\Key_17.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_18.wav">
+      <PackagePath>Samples\Drums\Key_18.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_19.wav">
+      <PackagePath>Samples\Drums\Key_19.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_2.wav">
+      <PackagePath>Samples\Drums\Key_2.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_20.wav">
+      <PackagePath>Samples\Drums\Key_20.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_22.wav">
+      <PackagePath>Samples\Drums\Key_22.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_23.wav">
+      <PackagePath>Samples\Drums\Key_23.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_24.wav">
+      <PackagePath>Samples\Drums\Key_24.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_25.wav">
+      <PackagePath>Samples\Drums\Key_25.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_3.wav">
+      <PackagePath>Samples\Drums\Key_3.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_4.wav">
+      <PackagePath>Samples\Drums\Key_4.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_5.wav">
+      <PackagePath>Samples\Drums\Key_5.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_6.wav">
+      <PackagePath>Samples\Drums\Key_6.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_7.wav">
+      <PackagePath>Samples\Drums\Key_7.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_8.wav">
+      <PackagePath>Samples\Drums\Key_8.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Drums\Key_9.wav">
+      <PackagePath>Samples\Drums\Key_9.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_1.wav">
+      <PackagePath>Samples\Piano\Key_1.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_10.wav">
+      <PackagePath>Samples\Piano\Key_10.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_11.wav">
+      <PackagePath>Samples\Piano\Key_11.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_12.wav">
+      <PackagePath>Samples\Piano\Key_12.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_13.wav">
+      <PackagePath>Samples\Piano\Key_13.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_14.wav">
+      <PackagePath>Samples\Piano\Key_14.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_15.wav">
+      <PackagePath>Samples\Piano\Key_15.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_16.wav">
+      <PackagePath>Samples\Piano\Key_16.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_17.wav">
+      <PackagePath>Samples\Piano\Key_17.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_18.wav">
+      <PackagePath>Samples\Piano\Key_18.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_19.wav">
+      <PackagePath>Samples\Piano\Key_19.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_2.wav">
+      <PackagePath>Samples\Piano\Key_2.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_20.wav">
+      <PackagePath>Samples\Piano\Key_20.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_21.wav">
+      <PackagePath>Samples\Piano\Key_21.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_22.wav">
+      <PackagePath>Samples\Piano\Key_22.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_23.wav">
+      <PackagePath>Samples\Piano\Key_23.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_24.wav">
+      <PackagePath>Samples\Piano\Key_24.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_25.wav">
+      <PackagePath>Samples\Piano\Key_25.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_3.wav">
+      <PackagePath>Samples\Piano\Key_3.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_4.wav">
+      <PackagePath>Samples\Piano\Key_4.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_5.wav">
+      <PackagePath>Samples\Piano\Key_5.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_6.wav">
+      <PackagePath>Samples\Piano\Key_6.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_7.wav">
+      <PackagePath>Samples\Piano\Key_7.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_8.wav">
+      <PackagePath>Samples\Piano\Key_8.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\Samples\Piano\Key_9.wav">
+      <PackagePath>Samples\Piano\Key_9.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\GUI Virtual Piano.xr.xml">
+      <PackagePath>GUI Virtual Piano.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\InfoPage.xbf">
+      <PackagePath>InfoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\InfoPageLight.xbf">
+      <PackagePath>InfoPageLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\MainPageLight.xbf">
+      <PackagePath>MainPageLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\ResourceDictionaries\Dictionary1.xbf">
+      <PackagePath>ResourceDictionaries\Dictionary1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\SettingsPageLight.xbf">
+      <PackagePath>SettingsPageLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\Themes\Dark.xbf">
+      <PackagePath>Themes\Dark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\Themes\Light.xbf">
+      <PackagePath>Themes\Light.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\UserControls\pianoWhiteKey.xbf">
+      <PackagePath>UserControls\pianoWhiteKey.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kaitlyn Dickinson\OneDrive - Oregon Institute of Technology\GUI\gui-virtual-piano\GUI Virtual Piano\GUI Virtual Piano\bin\x86\Debug\Core\GUI Virtual Piano.exe">
+      <PackagePath>GUI Virtual Piano.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Kaitlyn Dickinson\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

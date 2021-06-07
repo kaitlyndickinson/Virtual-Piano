@@ -1,0 +1,356 @@
+﻿<ResourceDictionary
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+	<!-- Record/Play Background -->
+	<Style TargetType="Rectangle" x:Key="RecordPlayBackground">
+		<Setter Property="Fill" Value="white"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="MinHeight" Value="300"/>
+		<Setter Property="MinWidth" Value="800"/>
+		<Setter Property="RelativePanel.AlignHorizontalCenterWithPanel" Value="True"/>
+		<Setter Property="Margin" Value="0,80,0,0"/>
+		<Setter Property="RelativePanel.Below" Value="myMenuBar"/>
+	</Style>
+
+	<!-- CHECKBOX STYLE -->
+	<Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="CheckBox">
+					<Grid x:Name="RootGrid" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="{TemplateBinding CornerRadius}">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="20"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CombinedStates">
+								<VisualState x:Name="UncheckedNormal">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="DarkGray"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="UncheckedPointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Green"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="CheckedNormal">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Green"/>
+										</ObjectAnimationUsingKeyFrames>
+										<DoubleAnimation Duration="0" Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="StrokeThickness" To="{ThemeResource CheckBoxCheckedStrokeThickness}"/>
+										<DoubleAnimation Duration="0" Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Opacity" To="1"/>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Grid Height="32" VerticalAlignment="Top">
+							<Rectangle x:Name="NormalRectangle" Fill="{ThemeResource CheckBoxCheckBackgroundFillUnchecked}" Height="20" StrokeThickness="{ThemeResource CheckBoxBorderThemeThickness}" Stroke="{ThemeResource CheckBoxCheckBackgroundStrokeUnchecked}" UseLayoutRounding="False" Width="20"/>
+							<FontIcon x:Name="CheckGlyph" FontFamily="{ThemeResource SymbolThemeFontFamily}" Foreground="{ThemeResource CheckBoxCheckGlyphForegroundUnchecked}" FontSize="20" Glyph="&#xE001;" Opacity="0"/>
+						</Grid>
+						<ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentTransitions="{TemplateBinding ContentTransitions}" Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" TextWrapping="Wrap" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- WHITE PIANO KEY STYLE -->
+	<Style x:Key="whitePianoKey" x:Name="wPKey"  TargetType="Button">
+		<Setter Property="Button.Background">
+			<Setter.Value>
+				<SolidColorBrush Color="{StaticResource whiteKeyColor}"/>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="BorderBrush" Value="Black"/>
+		<Setter Property="BorderThickness" Value="4"/>
+		<Setter Property="ClickMode" Value="Press"/>
+		<Setter Property="VerticalContentAlignment" Value="Bottom"/>
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource whiteKeyColor}" Duration="{StaticResource highlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            From="{StaticResource pressedKeyColor}" To="{StaticResource whiteKeyColor}" Duration="{StaticResource highlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid"
+                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                   Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledTransparentBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<ContentPresenter x:Name="ContentPresenter"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Content="{TemplateBinding Content}"
+                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          Padding="{TemplateBinding Padding}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          AutomationProperties.AccessibilityView="Raw"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- BLACK PIANO KEY STYLE -->
+	<Style x:Key="blackPianoKey" TargetType="Button">
+		<Setter Property="Background" Value="{StaticResource blackKeyColor}"/>
+		<Setter Property="BorderBrush" Value="Black"/>
+		<Setter Property="BorderThickness" Value="4"/>
+		<Setter Property="VerticalContentAlignment" Value="Bottom"/>
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid2" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid2"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource blackKeyColor}" Duration="{StaticResource highlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid2"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource blackKeyColor}" Duration="{StaticResource highlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid2"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            From="{StaticResource pressedKeyColor}" Duration="{StaticResource highlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<ContentPresenter x:Name="ContentPresenter"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Content="{TemplateBinding Content}"
+                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          Padding="{TemplateBinding Padding}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          AutomationProperties.AccessibilityView="Raw"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+
+	<!-- RECORD TOGGLE BUTTON STYLE -->
+	<Style x:Key="recordToggleButton" TargetType="ToggleButton">
+		<Setter Property="Background" Value="{StaticResource blackKeyColor}"/>
+		<Setter Property="IsThreeState" Value="False"/>
+
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="ToggleButton">
+					<Grid x:Name="RootGrid3" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_Off}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_Off}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="CheckedPointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_On}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="Checked">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_On}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<ContentPresenter x:Name="ContentPresenter"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Content="{TemplateBinding Content}"
+                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          Padding="{TemplateBinding Padding}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          AutomationProperties.AccessibilityView="Raw"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- PlayPause TOGGLE BUTTON STYLE -->
+	<Style x:Key="playPauseToggleButton" TargetType="ToggleButton">
+		<Setter Property="Background" Value="{StaticResource playTriangle_Active}"/>
+		<Setter Property="IsThreeState" Value="False"/>
+
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="ToggleButton">
+					<Grid x:Name="RootGrid3" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_Off}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource recordToggleButtonColor_Off}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="CheckedPointerOver">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource pressedTriangleColor}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+								<VisualState x:Name="Checked">
+									<Storyboard>
+										<ColorAnimation
+                                            Storyboard.TargetName="RootGrid3"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource pressedTriangleColor}" Duration="{StaticResource instantHighlightDuration}"/>
+									</Storyboard>
+								</VisualState>
+
+
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<ContentPresenter x:Name="ContentPresenter"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Content="{TemplateBinding Content}"
+                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          Padding="{TemplateBinding Padding}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          AutomationProperties.AccessibilityView="Raw"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Color x:Key="whiteKeyColor">White</Color>
+	<Color x:Key="backgroundColor">White</Color>
+	<Color x:Key="recordToggleButtonColor_Off">Black</Color>
+	<Color x:Key="recordToggleButtonColor_On">#de4b4b</Color>
+	<Color x:Key="blackKeyColor">Black</Color>
+	<Color x:Key="pressedKeyColor">Yellow</Color>
+	<Color x:Key="ellipseFill">white</Color>
+	<Color x:Key="pressedTriangleColor">Green</Color>
+	<Color x:Key="commandBarBackground">#42cef5</Color>
+	<Color x:Key="textBlockForeground">Black</Color>
+	<Color x:Key="volumeSliderBackground">LightGray</Color>
+	<Duration x:Key="highlightDuration">0:0:0.5</Duration>
+	<Duration x:Key="instantHighlightDuration">0:0:0.00</Duration>
+	<SolidColorBrush x:Key="playTriangle_Active" Color="Green"/>
+	<SolidColorBrush x:Key="playTriangle_Stopped" Color="black"/>
+</ResourceDictionary>

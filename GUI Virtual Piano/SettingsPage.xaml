@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="GUI_Virtual_Piano.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GUI_Virtual_Piano"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\Dark.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Page.Background>
+        <SolidColorBrush Color="{StaticResource backgroundColor}"/>
+    </Page.Background>
+
+    <RelativePanel x:Name="mainPage" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="1050" MinHeight="1000" Width="1479" Margin="0,33,0,0">
+
+        <CommandBar x:Name="myMenuBar" x:Uid="commandBar" IsSticky="True" IsOpen="True" OverflowButtonVisibility="Collapsed" Closing="CommandBar_Closing" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Margin="0,-5,0,0" VerticalAlignment="Center">
+            <CommandBar.Content>
+                <TextBlock x:Uid="KeyboardTitle" x:Name="keyboardTitle" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="12,14" Foreground="{StaticResource textBlockForeground}"/>
+            </CommandBar.Content>
+            <CommandBar.Background>
+                <SolidColorBrush Color="{StaticResource commandBarBackground}"/>
+            </CommandBar.Background>
+            <AppBarButton x:Uid="InfoItem" x:Name="infoItem" Icon="Help" Click="Info_Click" Foreground="{StaticResource textBlockForeground}"/>
+            <AppBarSeparator/>
+            <AppBarButton x:Uid="KeyboardItem" x:Name="keyboardItem" Icon="Audio" Click="Main_Click" Foreground="{StaticResource textBlockForeground}"/>
+            <AppBarSeparator/>
+            <AppBarButton x:Uid="SettingsItem" x:Name="settingsItem" Icon="Setting" Click="Settings_Click" Foreground="{StaticResource textBlockForeground}"/>
+        </CommandBar>
+
+        <TextBlock x:Uid="ThemeTextBlock" x:Name="ThemeTextBlock" HorizontalAlignment="Left" Margin="220,219,0,0" Text="Theme" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="99" FontSize="30" FontFamily="Bell MT" Foreground="{StaticResource textBlockForeground}"/>
+        <TextBlock x:Uid="InstrumentTextBlock" x:Name="InstrumentTextBlock" Margin="1125,219,0,0" Text="Instrument" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" FontSize="30" FontFamily="Bell MT" RenderTransformOrigin="0.5,0.5" Foreground="{StaticResource textBlockForeground}">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateX="0"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <ComboBox x:Uid="ThemeComboBox" x:Name="ThemeComboBox" Margin="203,268,0,0" Width="120" SelectionChanged="ThemeComboBox_SelectionChanged">
+            <ComboBoxItem x:Name="DarkTheme" x:Uid="DarkItem"/>
+            <ComboBoxItem x:Name="LightTheme" x:Uid="LightItem"/>
+        </ComboBox>
+        <ComboBox x:Uid="InstrumentComboBox" x:Name="InstrumentComboBox" Margin="1135,268,0,0" Width="120" SelectionChanged="InstrumentComboBox_SelectionChanged">
+            <ComboBoxItem x:Name="PianoItem" x:Uid="PianoItem"/>
+            <ComboBoxItem x:Name="DrumsItem" x:Uid="DrumsItem"/>
+            <ComboBoxItem x:Name="BellsItem" x:Uid="BellsItem"/>
+        </ComboBox>
+        <TextBlock x:Uid="KeyNotesTextBlock" x:Name="KeyNotesTextBlock" HorizontalAlignment="Left" Margin="686,219,0,0" Text="Key Notes" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="137" FontSize="30" FontFamily="Bell MT" Foreground="{StaticResource textBlockForeground}"/>
+        <TextBlock x:Uid="VolumeTextBlock" x:Name="VolumeTextBlock" HorizontalAlignment="Left" Margin="702,475,0,0" Text="Volume" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="106" FontSize="30" FontFamily="Bell MT" Foreground="{StaticResource textBlockForeground}"/>
+        <Slider x:Name="VolumeSlider" Minimum="0" Maximum="1" Width="630" TickFrequency="3" ValueChanged="VolumeSlider_ValueChanged" RenderTransformOrigin="0.5,0.5" Foreground="{StaticResource playTriangle_Active}" Background="{StaticResource volumeSliderBackground}">
+            <Slider.RenderTransform>
+                <CompositeTransform TranslateY="540" TranslateX="430"/>
+            </Slider.RenderTransform>
+        </Slider>
+        <ComboBox Width="120" x:Uid="KeyNotesComboBox" x:Name="KeyNotesComboBox" RenderTransformOrigin="0.5,0.5" SelectionChanged="KeyNotesComboBox_SelectionChanged">
+            <ComboBoxItem x:Name="KeyNotesOn" x:Uid="KeyNotesOn"/>
+            <ComboBoxItem x:Name="KeyNotesOff" x:Uid="KeyNotesOff"/>
+            <ComboBox.RenderTransform>
+                <CompositeTransform TranslateX="690" TranslateY="266"/>
+            </ComboBox.RenderTransform>
+        </ComboBox>
+    </RelativePanel>
+
+
+</Page>
